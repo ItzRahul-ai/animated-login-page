@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <span class="bg-animation"></span>
+        <span class="bg-animation2"></span>
+
+        <div class="form-box Login ">
+
+            <h2 class="animation " style="--delay:0; --back-delay:17;">Login</h2>
+            <form action="#">
+                <div class="input-box animation" style="--delay:1; --back-delay:18;">
+                    <input type="text" name="username" required>
+                    <label for="input">Username</label>
+                    <i class="bx  bxs-user"> </i>
+                </div>
+                <div class="input-box animation" style="--delay:2; --back-delay:19;">
+                    <input type="password" name="password" required>
+                    <label for="input">Password</label>
+                    <i class="bx  bxs-lock-alt"> </i>
+                </div>
+                <div>
+                    <input type="submit" value="Login" class="btn animation " style="--delay:3; --back-delay:20;">
+                </div>
+                <div class="register animation" style="--delay:4; --back-delay:21;">
+                    <span>Don't have an account? <a href="#" class="register-link">Sign Up</a></span>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="info-text Login ">
+            <h2 class="animation" style="--delay:0; --back-delay:17;">Welcome Back!</h2>
+            <span class="animation" style="--delay:1; --back-delay:18;">Lorem ipsum dolor sit amet, consectetur
+                adipisicing.</span>
+        </div>
+
+        <div class="form-box Register">
+
+            <h2 class="animation" style="--delay:22;  --back-delay:0;">Sign Up</h2>
+            <form action="#">
+                <div class="input-box animation" style="--delay:21;  --back-delay:1;">
+                    <input type="text" name="username" required>
+                    <label for="input">Username</label>
+                    <i class="bx  bxs-user"> </i>
+                </div>
+                <div class="input-box animation" style="--delay:20;  --back-delay:2;">
+                    <input type="text" name="username" required>
+                    <label for="input">Email</label>
+                    <i class="bx  bxs-envelope"> </i>
+                </div>
+                <div class="input-box animation" style="--delay:19;  --back-delay:3;">
+                    <input type="password" name="password" required>
+                    <label for="input">Password</label>
+                    <i class="bx  bxs-lock-alt"> </i>
+                </div>
+                <div>
+                    <input type="submit" value="Sign Up" class="btn animation " style="--delay:18;  --back-delay:4;">
+                </div>
+                <div class="login animation" style="--delay:17;  --back-delay:5;">
+                    <span>Already have an account? <a href="#" class="login-link">SignIn</a></span>
+                </div>
+            </form>
+
+        </div>
+        <div class="info-text Register">
+            <h2 class="animation" style="--delay:17; --back-delay:1;">Welcome Back!</h2>
+            <span class="animation" style="--delay:18; --back-delay:0;">Lorem ipsum dolor sit amet, consectetur
+                adipisicing.</span>
+        </div>
+
+    </div>
+    <script>
+        const content = document.querySelector('.container');
+        const registerLink = document.querySelector('.register-link');
+        const loginLink = document.querySelector('.login-link');
+
+
+
+        registerLink.onclick = () => {
+            content.classList.add('active');
+        }
+        loginLink.onclick = () => {
+            content.classList.remove('active');
+        }
+    </script>
+</body>
+
+</html>
